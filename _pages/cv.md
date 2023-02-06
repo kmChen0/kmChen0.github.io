@@ -11,30 +11,26 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Mathematics, Beijing University of Chemical Technology, 2018
+* M.S. in optimization, Kyoto University, 2022
+* Ph.D in in optimization, Kyoto University, 2025 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2019.3--2020.11: Research Assistant
+  * Southern University of Science and Technology
+  * Supervisor: Professor Yanglili
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Japanese N2
+* Programing Skill
+  * Python
+  * Matlab
+  * R
+
 
 Publications
 ======
@@ -56,4 +52,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently secretary of Kyoto University SIAM Student Chapter
