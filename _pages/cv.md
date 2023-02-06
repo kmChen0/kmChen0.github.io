@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in Mathematics, Beijing University of Chemical Technology, 2018
-* M.S. in optimization, Kyoto University, 2022
-* Ph.D in in optimization, Kyoto University, 2025 (expected)
+* B.S. in Mathematics and applied mathematics, Beijing University of Chemical Technology, 2018
+* M.S. in Applied mathematics and physics, Kyoto University, 2022
+* Ph.D in Applied mathematics and physics, Kyoto University, 2025 (expected)
 
 Work experience
 ======
@@ -26,7 +26,7 @@ Work experience
 Skills
 ======
 * Japanese N2
-* Programing Skill
+* Programming Skill
   * Python
   * Matlab
   * R
