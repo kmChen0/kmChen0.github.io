@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Kangming Chen"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Kangming Chen"
 description              : &description "personal description"
 url                      : https://kmChen0.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -215,9 +215,9 @@ defaults:
       type: teaching
     values:
       layout: single
-      author_profile: true
-      share: true
-      comments: true
+      author_profile: false
+      share: false
+      comments: false
   # _publications
   - scope:
       path: ""
@@ -233,9 +233,9 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: true
-      share: true
-      comment: true
+      author_profile: false
+      share: false
+      comment: false
   # _talks
   - scope:
       path: ""
