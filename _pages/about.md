@@ -8,5 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-I am now a PhD student at Kyoto University.
+Now I am a PhD student in the System Optimization Lab at Kyoto University.
 
+Interests: Multiobjective optimization, Vector optimization, Riemannian optimization. 
