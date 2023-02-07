@@ -5,12 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-1) Gong W, <span style="border-bottom:2px dashed black;">Chen K</span>, Huggins T J, et al. Risk Evaluation Based on Variable Fuzzy Sets and Information Diffusion Method. Journal of Applied Mathematics and Physics, 2020, 8(5): 821-830.
+1) Gong W, <u>Chen K</u>, Huggins T J, et al. Risk Evaluation Based on Variable Fuzzy Sets and Information Diffusion Method. Journal of Applied Mathematics and Physics, 2020, 8(5): 821-830.
 
-2) Huggins T J, <span style="border-bottom:2px dashed black;">Chen K</span>, Gong W, et al. The razor in the waterfall: Using longitudinal data to sharpen the analysis of cascading disaster risk. IOP Conference Series: Earth and Environmental Science. IOP Publishing, 2020, 432(1): 012015.
+2) Huggins T J, <u>Chen K</u>, Gong W, et al. The razor in the waterfall: Using longitudinal data to sharpen the analysis of cascading disaster risk. IOP Conference Series: Earth and Environmental Science. IOP Publishing, 2020, 432(1): 012015.
 
-3) Huggins, T.J.; E, F.; <span style="border-bottom:2px dashed black;">Chen, K.</span>; Gong, W.; Yang, L. Infrastructural Aspects of Rain-Related Cascading Disasters: A Systematic Literature Review. Int. J. Environ. Res. Public Health 2020, 17, 5175. https://doi.org/10.3390/ijerph17145175
-
+3) Huggins, T.J.; E, F.; <u>Chen, K.</u>; Gong, W.; Yang, L. Infrastructural Aspects of Rain-Related Cascading Disasters: A Systematic Literature Review. Int. J. Environ. Res. Public Health 2020, 17, 5175.
 
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
