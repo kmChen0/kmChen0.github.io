@@ -24,7 +24,7 @@ Work experience
   * Shenzhen Urban Public Safety and Technology Institute
   * Participated in the basic information query and statistics of the database. Collect and do preliminary analysis of fire data. Participated in the content analysis and visual design of "A Map of Urban Security".
 * 2018/06-2018/08  Data Analysis Intern
-  *　Huawen Media Industry Innovation Research Institute
+  * Huawen Media Industry Innovation Research Institute
   * Collect data from the Internet, including textual and numerical data. Organize data, set indicators, analyze data and form preliminary analysis results.
 
   
@@ -33,8 +33,6 @@ Skills
 * JLPT N2
 * Programming Skill
   * Python
-  * Matlab
-  * R
 
 
 Publications
