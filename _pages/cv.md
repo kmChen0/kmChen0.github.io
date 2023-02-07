@@ -17,15 +17,20 @@ Education
 
 Work experience
 ======
-* 2019.3--2020.11: Research Assistant
+* 2019.3--2020.11  Research Assistant
   * Southern University of Science and Technology
   * Supervisor: Professor Yanglili
-
+* 2019/06-2019/09  Data Analysis Intern
+  * Shenzhen Urban Public Safety and Technology Institute
+  * Participated in the basic information query and statistics of the database. Collect and do preliminary analysis of fire data. Participated in the content analysis and visual design of "A Map of Urban Security".
+* 2018/06-2018/08  Data Analysis Intern
+  *　Huawen Media Industry Innovation Research Institute
+  * Collect data from the Internet, including textual and numerical data. Organize data, set indicators, analyze data and form preliminary analysis results.
 
   
 Skills
 ======
-* Japanese N2
+* JLPT N2
 * Programming Skill
   * Python
   * Matlab
