@@ -9,7 +9,7 @@ author_profile: true
 
 2) Huggins T J, <u>Chen K</u>, Gong W, et al. The razor in the waterfall: Using longitudinal data to sharpen the analysis of cascading disaster risk. IOP Conference Series: Earth and Environmental Science. IOP Publishing, 2020, 432(1): 012015.
 
-3) Huggins TJ, E F, <u>Chen K</u>, Gong W, Yang L. Infrastructural Aspects of Rain-Related Cascading Disasters: A Systematic Literature Review. Int J Environ Res Public Health. 2020, 17(14):5175.
+3) Huggins T J, E F, <u>Chen K</u>, Gong W, Yang L. Infrastructural Aspects of Rain-Related Cascading Disasters: A Systematic Literature Review. Int J Environ Res Public Health. 2020, 17(14):5175.
 
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
