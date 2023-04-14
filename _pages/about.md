@@ -9,5 +9,6 @@ redirect_from:
 ---
 
 Now I am a PhD student in the [System Optimization Lab](http://www-optima.amp.i.kyoto-u.ac.jp/) at [Kyoto University](https://www.kyoto-u.ac.jp/).
+At present, I am working on the extension of gradient descent method on Riemannian manifold.
 
-Interests: Multiobjective optimization, Vector optimization, Riemannian optimization. 
+Interests: Multiobjective optimization, Riemannian optimization. 
