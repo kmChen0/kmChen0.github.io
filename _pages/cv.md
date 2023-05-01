@@ -55,4 +55,4 @@ Talks
 
 Service and leadership
 ======
-* Currently secretary of Kyoto University SIAM Student Chapter
+* Currently vice president of Kyoto University SIAM Student Chapter
