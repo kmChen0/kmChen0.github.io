@@ -13,6 +13,7 @@ author_profile: true
 3) Huggins T J, E F, <u>Chen K</u>, Gong W, Yang L. Infrastructural Aspects of Rain-Related Cascading Disasters: A Systematic Literature Review. Int J Environ Res Public Health. 2020, 17(14):5175.
 
 **Master's thesis：**
+
 [A Proximal Gradient Method with Bregman Distance in Multi-objective Optimization](http://www-optima.amp.i.kyoto-u.ac.jp/papers/master/2022_master_chen.pdf)
 
 
