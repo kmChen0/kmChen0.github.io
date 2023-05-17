@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-**Papaers：**
+**Papers：**
 
 1) Gong W, <u>Chen K</u>, Huggins T J, et al. Risk Evaluation Based on Variable Fuzzy Sets and Information Diffusion Method. Journal of Applied Mathematics and Physics, 2020, 8(5): 821-830.
 
