@@ -83,10 +83,10 @@ author:
   name             : "Kangming Chen"
   avatar           : "cat.jpg"
   bio              : "PhD Student"
-  location         : "Kyoto"
+  location         : "Kyoto, JAPAN"
   employer         :
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : https://scholar.google.com/citations?user=czYKM04AAAAJ&hl=EN
   email            : "kangming@amp.i.kyoto-u.ac.jp"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
