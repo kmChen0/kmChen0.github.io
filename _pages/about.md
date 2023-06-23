@@ -9,6 +9,6 @@ redirect_from:
 ---
 
 I am Kangming Chen, come from China. Now I am a PhD student in the [System Optimization Lab](http://www-optima.amp.i.kyoto-u.ac.jp/) at [Kyoto University](https://www.kyoto-u.ac.jp/).
-At present, I am working on the extension of gradient descent methods on Riemannian manifolds. 
+I'm currently working on an extension of gradient descent, now doing conjugate and proximal gradient methods, for vector optimization on Riemannian manifolds.
 
 Interests: Multiobjective optimization, Manifold optimization. 
