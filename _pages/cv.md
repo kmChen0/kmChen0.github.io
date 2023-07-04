@@ -62,4 +62,4 @@ Grants
 Service and leadership
 ======
 * 2023/04–Present: Vice-president of [Kyoto University SIAM Student Chapter](https://sites.google.com/view/siam-sc-kyoto/)
-* 2023/07–Present: Membership of the [Operations Research Society of Japan (ORSJ)](https://orsj.org/)
+* 2023/07–Present: Member of the [Operations Research Society of Japan (ORSJ)](https://orsj.org/)
