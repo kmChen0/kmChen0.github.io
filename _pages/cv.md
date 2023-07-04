@@ -33,6 +33,7 @@ Skills
 * JLPT N2
 * Programming Skill
   * Python
+  * Matlab
 
 
 Publications
@@ -53,8 +54,12 @@ Talks
   {% endfor %}</ul>
   
 
+Grant
+======
+* 2022/04–Present  Kyoto University Science and Technology Innovation Creation Fellowship supported by the Japan Science and Technology Agency (JST)
+
 
 Service and leadership
 ======
-* Currently vice-president of [Kyoto University SIAM Student Chapter](https://sites.google.com/view/siam-sc-kyoto/)
-* Membership of the Operations Research Society of Japan (ORSJ)
+* 2023/04–Present  Vice-president of [Kyoto University SIAM Student Chapter](https://sites.google.com/view/siam-sc-kyoto/)
+* 2023/07–Present  Membership of the Operations Research Society of Japan (ORSJ)
