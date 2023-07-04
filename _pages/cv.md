@@ -54,7 +54,7 @@ Talks
   {% endfor %}</ul>
   
 
-Grant
+Grants
 ======
 * 2022/04–Present: Kyoto University Science and Technology Innovation Creation Fellowship supported by the Japan Science and Technology Agency (JST)
 
