@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in Mathematics and applied mathematics, Beijing University of Chemical Technology, 2018
-* M.S. in Applied mathematics and physics, Kyoto University, 2022
-* Ph.D in Applied mathematics and physics, Kyoto University, 2025 (expected)
+* B.S. in Mathematics and Applied Mathematics, Beijing University of Chemical Technology, 2018
+* M.S. in Applied Mathematics and Physics, Kyoto University, 2022
+* Ph.D. in Applied Mathematics and Physics, Kyoto University, 2025 (expected)
 
 Work experience
 ======
@@ -22,7 +22,8 @@ Work experience
   * Supervisor: Professor Yanglili
 * 2019/06-2019/09: Data Analysis Intern
   * Shenzhen Urban Public Safety and Technology Institute
-  * Collect and do the analysis of fire data. Participated in the content analysis and visual design of "A Map of Urban Security".
+  * Collect and do the analysis of fire data.
+  * Participated in the content analysis and visual design of "A Map of Urban Security".
 * 2018/06-2018/08: Data Analysis Intern
   * Huawen Media Industry Innovation Research Institute
   * Collect data from the Internet, including textual and numerical data. Organize data, set indicators, analyze data and form the results.
