@@ -55,6 +55,7 @@ Talks
 *  <u>Kangming Chen</u>, Hiroyuki Sato, Ellen Hidemi Fukuda, Nonlinear conjugate gradient method for vector optimization on Riemannian manifolds, The 10th International Congress on Industrial and Applied Mathematics (ICIAM), Tokyo, Japan, 2023/08. [[Detail]](https://iciam2023.org/registered_data?id=01064)
 *  <u>Kangming Chen</u>, Ellen Hidemi Fukuda, A proximal gradient method with Bregman distance in multi-objective optimization, International Workshop on Continuous Optimization, Tokyo (online), Japan,  2022/12/04. [[Detail]](http://www.opt.c.titech.ac.jp/DecemberWorkshop/schedule.html)
 
+
 <div style="display:none">
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
