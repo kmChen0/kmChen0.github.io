@@ -1,3 +1,11 @@
+
+---
+layout: archive
+title: "Talks and Presentations"
+permalink: /talks/
+author_profile: true
+---
+
 ## Talks and Presentations
 
 *  <u>Kangming Chen</u>, Hiroyuki Sato, Ellen Hidemi Fukuda, Nonlinear conjugate gradient method for vector optimization on Riemannian manifolds, The 2023 autumn national conference of operations research society of Japan, Nishinomiya, Japan, 2023/09. [[PDF]](https://kangming.tech/files/OR2023_Abstract_Chen_Kangming.pdf)
