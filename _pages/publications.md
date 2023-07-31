@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
+**Preprint：**
+
+1) <u>Chen K</u>, Fukuda E H, Sato H. Nonlinear conjugate gradient method for vector optimization on Riemannian manifolds with retraction and vector transport[J]. arXiv preprint arXiv:2307.15515, 2023. [[arXiv]](https://arxiv.org/abs/2307.15515)
+
 **Papers：**
 
 1) Gong W, <u>Chen K</u>, Huggins T J, et al. Risk Evaluation Based on Variable Fuzzy Sets and Information Diffusion Method. Journal of Applied Mathematics and Physics, 2020, 8(5): 821-830.
@@ -17,9 +21,6 @@ author_profile: true
 
 [A Proximal Gradient Method with Bregman Distance in Multi-objective Optimization](http://www-optima.amp.i.kyoto-u.ac.jp/papers/master/2022_master_chen.pdf)
 
-**Preprint：**
-
-1) <u>Chen K</u>, Fukuda E H, Sato H. Nonlinear conjugate gradient method for vector optimization on Riemannian manifolds with retraction and vector transport[J]. arXiv preprint arXiv:2307.15515, 2023. [arXiv](https://arxiv.org/abs/2307.15515)
 
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
