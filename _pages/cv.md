@@ -20,6 +20,7 @@ Work experience
 * 2019/03--2020/11: Research Assistant
   * Southern University of Science and Technology
   * Supervisor: Professor Yanglili
+    
 * 2019/06-2019/09: Data Analysis Intern
   * Shenzhen Urban Public Safety and Technology Institute
  <!-- * Collect and do the analysis of fire data.
