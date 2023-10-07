@@ -23,8 +23,8 @@ Work experience
     
 * 2019/06-2019/09: Data Analysis Intern
   * Shenzhen Urban Public Safety and Technology Institute
- <!-- * Collect and do the analysis of fire data.
-   * Participated in the content analysis and visual design of "A Map of Urban Security".-->
+ <!-- * Collect and do the analysis of fire data.-->
+ <!--  * Participated in the content analysis and visual design of "A Map of Urban Security".-->
 * 2018/06-2018/08: Data Analysis Intern
   
   * Huawen Media Industry Innovation Research Institute
