@@ -26,7 +26,6 @@ Work experience
  <!-- * Collect and do the analysis of fire data.-->
  <!--  * Participated in the content analysis and visual design of "A Map of Urban Security".-->
 * 2018/06-2018/08: Data Analysis Intern
-  
   * Huawen Media Industry Innovation Research Institute
  <!--   * Collect data from the Internet, including textual and numerical data. Organize data, set indicators, analyze data, and form the results.-->
 
