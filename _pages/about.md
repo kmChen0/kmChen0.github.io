@@ -12,6 +12,6 @@ I am Kangming Chen, come from China. Now I am a PhD student in the [System Optim
 I've been working on Manifold optimization recently. 
 My research is currently centered around exploring vector optimization on Riemannian manifolds. This exploration notably includes the application and advancement of conjugate, proximal, and conditional gradient methods.
 
-Interests: Continuous Optimization, Multiobjective Optimization, Manifold Optimization, Bilevel Optimization.
+Interests: Continuous Optimization, Multiobjective Optimization, Manifold Optimization.
 
 Please don't hesitate to contact me if you have anything interested.
