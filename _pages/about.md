@@ -14,4 +14,5 @@ My research is currently centered around exploring vector optimization on Rieman
 
 Interests: Continuous Optimization, Multiobjective Optimization, Manifold Optimization.
 
+
 Please don't hesitate to contact me if you have anything interested.
