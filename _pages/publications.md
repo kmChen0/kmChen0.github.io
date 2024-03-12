@@ -7,9 +7,9 @@ author_profile: true
 
 **Preprint：**
 
-1) <u>K. Chen</u>, E. H. Fukuda, and H. Sato, Nonlinear conjugate gradient method for vector optimization on Riemannian manifolds with retraction and vector transport, submitted, 2024. [[arXiv]](https://arxiv.org/abs/2307.15515)
-
-2) <u>K. Chen</u>, E. H. Fukuda and N. Yamashita. A proximal gradient method with Bregman distance in multi-objective optimization. To appear in *Pacific Journal of Optimization*, 2023.
+1) <u>K. Chen</u>, E. H. Fukuda, and H. Sato, Nonlinear conjugate gradient method for vector optimization on Riemannian manifolds with retraction and vector transport, submitted, 2024.
+2) 
+3) <u>K. Chen</u>, E. H. Fukuda and N. Yamashita. A proximal gradient method with Bregman distance in multi-objective optimization. To appear in *Pacific Journal of Optimization*, 2023.
 
 <!-- 
 **Papers：**
