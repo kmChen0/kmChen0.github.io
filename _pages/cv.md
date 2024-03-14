@@ -45,11 +45,11 @@ Publications
 * Huggins T J, E F, <u>Chen K</u>, Gong W, Yang L. Infrastructural Aspects of Rain-Related Cascading Disasters: A Systematic Literature Review. Int J Environ Res Public Health. 2020, 17(14):5175.
  -->
  
-Preprint
+Preprint/Paper
 ======
 1) <u>K. Chen</u>, E. H. Fukuda, and H. Sato, Nonlinear conjugate gradient method for vector optimization on Riemannian manifolds with retraction and vector transport, arXiv preprint arXiv:2307.15515. [[arXiv]](https://arxiv.org/abs/2307.15515)
 
-2) <u>K. Chen</u>, E. H. Fukuda and N. Yamashita. A proximal gradient method with Bregman distance in multi-objective optimization. To appear in *Pacific Journal of Optimization*, 2023.
+2) <u>K. Chen</u>, E. H. Fukuda and N. Yamashita. A proximal gradient method with Bregman distance in multi-objective optimization. To appear in *Pacific Journal of Optimization*, 2024.
 
 
   <ul>{% for post in site.publications %}
