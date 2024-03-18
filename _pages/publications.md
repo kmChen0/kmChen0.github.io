@@ -11,7 +11,7 @@ author_profile: true
 
 
 
-**Papers(peer-reviewed)：**
+**Papers (peer-reviewed)：**
 
 1) <u>K. Chen</u>, E. H. Fukuda and N. Yamashita. A proximal gradient method with Bregman distance in multi-objective optimization. To appear in *Pacific Journal of Optimization*, 2024. [[doi]](https://doi.org/10.61208/pjo-2024-012)
 
