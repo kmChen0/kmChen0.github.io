@@ -73,7 +73,8 @@ Talks
 
 Grants
 ======
-* 2022/04–Present: Kyoto University Science and Technology Innovation Creation Fellowship supported by the Japan Science and Technology Agency (JST)
+* 2024/04–2025/03: 京都大学大学院教育支援機構奨励研究員, Kyoto University Division of Graduate Studies SPRING Program supported by the Japan Science and Technology Agency (JST)
+* 2022/04–2024/03: Kyoto University Science and Technology Innovation Creation Fellowship supported by the Japan Science and Technology Agency (JST)
 
 
 Service and leadership
