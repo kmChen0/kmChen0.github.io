@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Kangming Chen"
   avatar           : "cat.jpg"
-  bio              : "PhD Student"
+  bio              : "Doctoral candidate"
   location         : "Kyoto, JAPAN"
   employer         :
   pubmed           : 
@@ -176,7 +176,7 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
