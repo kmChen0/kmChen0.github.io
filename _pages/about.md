@@ -14,4 +14,4 @@ My research is currently centered around exploring vector optimization on Rieman
 
 Interests: Continuous Optimization, Multiobjective Optimization, Manifold Optimization.
 
-Please feel free to contact me if you are interested in these fields.
+I am actively seeking postdoctoral or assistant professor positions to further my research career. I am passionate about continuing my work in optimization and mathematical engineering and am eager to contribute to and collaborate with a dynamic research team. Please feel free to contact me for potential opportunities.
