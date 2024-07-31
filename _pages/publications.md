@@ -7,7 +7,7 @@ author_profile: true
 
 **Preprint：**
 
-1) <u>K. Chen</u>, E. H. Fukuda, and H. Sato, Nonlinear conjugate gradient method for vector optimization on Riemannian manifolds with retraction and vector transport, submitted, 2024.
+1) <u>K. Chen</u>, E. H. Fukuda, and H. Sato, Nonlinear conjugate gradient method for vector optimization on Riemannian manifolds with retraction and vector transport, accepted, 2024.
 
 
 
