@@ -5,7 +5,7 @@ permalink: /talks/
 author_profile: true
 
 ---
-*  <u>Kangming Chen</u>, Ellen Hidemi Fukuda, Riemannian generalized conditional gradient methods, 2024 Annual Meeting of the Japan Society for Industrial and Applied Mathematics (JSIAM), Kyoto, Japan, 2024/09/14-2024/09/16. [[Detail]](https://jsiam.org/annual2024/) 
+*  <u>Kangming Chen</u>, Ellen Hidemi Fukuda, Riemannian generalized conditional gradient methods, 2024 Annual Meeting of the Japan Society for Industrial and Applied Mathematics (JSIAM), Kyoto, Japan, 2024/09/14-2024/09/16. [[Detail]](https://conference.wdc-jp.com/jsiam/2024/program/program_flash.html) 
 *  <u>Kangming Chen</u>, Ellen Hidemi Fukuda, Generalized Conditional Gradient Method with Three Step Size Strategies on Riemannian Manifolds, The 2024 autumn national conference of Operations Research Society of Japan, Nagoya, Japan, 2024/09/09-2024/09/11. [[Detail]](https://orsj.org/nc2024f/) [[Abstract]](https://kangming.tech/files/OR2024autumn_Abstract_Chen.pdf)
 *  <u>Kangming Chen</u>, Ellen Hidemi Fukuda, Riemannian conditional gradient methods for composite optimization problems, The 17th SIAM East Asian Section Conference, University of Macau, Macao SAR, China, 2024/06/30. [[Detail]](https://www.easiam2024.org/)
 *  <u>Kangming Chen</u>, Multiobjective Proximal gradient methods on Riemannian manifolds, The 20th Joint Meeting of the Japan Society for Industrial and Applied Mathematics (JSIAM) Activity Groups, Nagaoka, Japan, 2024/03/04. [[Detail]](https://jsiam.org/union2024) 
