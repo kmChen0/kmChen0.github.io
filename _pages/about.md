@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am Kangming Chen, come from China. Now I am a PhD student in the [System Optimization Lab](http://www-optima.amp.i.kyoto-u.ac.jp/) at [Kyoto University](https://www.kyoto-u.ac.jp/).
+I am Kangming Chen, come from China. Now I am a PhD student in the [System Optimization Lab](http://www-optima.amp.i.kyoto-u.ac.jp/) at [Kyoto University](https://www.kyoto-u.ac.jp/) under the supervision of Prof.[Ellen Hidemi Fukuda](http://www-optima.amp.i.kyoto-u.ac.jp/staff_website/ellen/).
 Previously, my research focused on multi-objective optimization. Currently, I am also working on optimization algorithms on manifolds.
 
 <!-- I've been working on Manifold optimization recently. 
