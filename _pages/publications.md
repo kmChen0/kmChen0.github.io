@@ -30,7 +30,7 @@ author_profile: true
 
 **Preprint：**
 
-1) <u>K. Chen</u>, E. H. Fukuda. Riemannian conditional gradient methods for composite optimization problems. *Submitted*, 2024. [https://doi.org/10.48550/arXiv.2412.19427](https://doi.org/10.48550/arXiv.2412.19427)
+1) <u>K. Chen</u>, E. H. Fukuda. Riemannian conditional gradient methods for composite optimization problems. *Submitted*, 2024. [[arXiv]](https://doi.org/10.48550/arXiv.2412.19427)
 
 
 {% if author.googlescholar %}
