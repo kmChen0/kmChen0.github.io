@@ -32,7 +32,7 @@ Work experience
   
 Skills
 ======
-* JLPT N2
+* JLPT N1
 * Programming Skill
   * Python
   * Matlab
