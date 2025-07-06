@@ -14,7 +14,7 @@ Previously, my research focused on multi-objective optimization. Currently, I am
 <!-- I've been working on Manifold optimization recently. 
 My research is currently centered around exploring vector optimization on Riemannian manifolds. This exploration notably includes the application and advancement of conjugate, proximal, and conditional gradient methods. --> 
 
-Interests: Continuous Optimization, Multiobjective Optimization, Manifold Optimization.
+Interests: Continuous Optimization, Multiobjective Optimization, Manifold Optimization, Bilevel Optimization.
 
 <!--I am actively seeking assistant professor or postdoctoral positions to further my research career. I am passionate about continuing my work in optimization, mathematical engineering, and related fields and am eager to contribute to and collaborate with a dynamic research team. Please feel free to contact me.--> 
 I am actively seeking assistant professor or postdoctoral positions to further my research career. My interests lie in continuing my work in optimization, computational mathematics, and related fields such as artificial intelligence, machine learning, data science, operations research, and mathematical engineering. I am eager to contribute to and collaborate with a dynamic research team. Please feel free to contact me.
