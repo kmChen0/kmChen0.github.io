@@ -20,7 +20,7 @@ author_profile: true
 <!-- 
 **Papers：**
 
-1) Gong W, <u>Chen K</u>, Huggins T J, et al. Risk Evaluation Based on Variable Fuzzy Sets and Information Diffusion Method. Journal of Applied Mathematics and Physics, 2020, 8(5): 821-830.
+1) Gong W., <u>Chen K</u>, Huggins T J, et al. Risk Evaluation Based on Variable Fuzzy Sets and Information Diffusion Method. Journal of Applied Mathematics and Physics, 2020, 8(5): 821-830.
 
 2) Huggins T J, <u>Chen K</u>, Gong W, et al. The razor in the waterfall: Using longitudinal data to sharpen the analysis of cascading disaster risk. IOP Conference Series: Earth and Environmental Science. IOP Publishing, 2020, 432(1): 012015.
 
@@ -31,6 +31,7 @@ author_profile: true
 **Preprint：**
 
 1) <u>K. Chen</u>, E. H. Fukuda. Riemannian conditional gradient methods for composite optimization problems. *Submitted*, 2024. [[arXiv]](https://doi.org/10.48550/arXiv.2412.19427)
+2) M. Marques Alves, <u>K. Chen</u>, E. H. Fukuda. An inertial iteratively regularized extragradient method for bilevel variational inequality problems. Submitted, 2025.
 
 
 {% if author.googlescholar %}
