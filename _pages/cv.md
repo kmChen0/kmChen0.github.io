@@ -13,7 +13,7 @@ Education
 ======
 * B.S. in Mathematics and Applied Mathematics, Beijing University of Chemical Technology, 2018
 * M.S. in Applied Mathematics and Physics, Kyoto University, 2022
-* Ph.D. in Applied Mathematics and Physics, Kyoto University, 2025 (expected)
+* Ph.D. in Applied Mathematics and Physics, Kyoto University, 2026 (expected)
 
 Work experience
 ======
