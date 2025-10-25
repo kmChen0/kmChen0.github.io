@@ -51,6 +51,8 @@ Papers/Preprint
 
 2) <u>K. Chen</u>, E. H. Fukuda and N. Yamashita. A proximal gradient method with Bregman distance in multi-objective optimization. *Pacific Journal of Optimization*. 2024, 20(4): 809-826. [doi: 10.61208/pjo-2024-012.](https://doi.org/10.61208/pjo-2024-012)
 
+3) <u>K. Chen</u>, E. H. Fukuda. Riemannian conditional gradient methods for composite optimization problems. To appear in *Computational and Applied Mathematics,* 2025. [[arXiv]](https://doi.org/10.48550/arXiv.2412.19427)
+
 
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
