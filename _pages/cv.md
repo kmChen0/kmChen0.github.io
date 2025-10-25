@@ -53,6 +53,8 @@ Papers/Preprint
 
 3) <u>K. Chen</u>, E. H. Fukuda. Riemannian conditional gradient methods for composite optimization problems. To appear in *Computational and Applied Mathematics,* 2025. [[arXiv]](https://doi.org/10.48550/arXiv.2412.19427)
 
+4) M. M. Alves, <u>K. Chen</u>, E. H. Fukuda. An inertial iteratively regularized extragradient method for bilevel variational inequality problems. *Submitted*, 2025. [[arXiv]](https://arxiv.org/abs/2507.16640)
+
 
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
