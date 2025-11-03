@@ -56,10 +56,12 @@ I am actively seeking assistant professor or postdoctoral positions to further m
     <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
   {% endif %}
   
- <!--{% for post in site.talks reversed %}
-    {% include archive-single-talk.html %}
-  {% endfor %}--> 
 
+<ul>
+    <li>
+      <u>Kangming Chen</u>, Maicon Marques Alves, Ellen Hidemi Fukuda, An inertial iteratively regularized extragradient method for bilevel variational inequality problems, The 2025 autumn national conference of Operations Research Society of Japan (ORSJ), Hiroshima, Japan, 2025/09/12. [[Detail]](https://orsj.org/2025f/)
+    </li>
+    </ul>
 *  <u>Kangming Chen</u>, Maicon Marques Alves, Ellen Hidemi Fukuda, An inertial iteratively regularized extragradient method for bilevel variational inequality problems, The 2025 autumn national conference of Operations Research Society of Japan (ORSJ), Hiroshima, Japan, 2025/09/12. [[Detail]](https://orsj.org/2025f/) 
 *  <u>Kangming Chen</u>, Ellen Hidemi Fukuda, Nobuo Yamashita, Proximal Gradient Method for Multi-Objective Optimization with Bregman Distance, Workshop: ‘‘Optimization: Modeling and Algorithms’’, Tokyo, Japan,  2025/03/17. [[Detail]](http://grips-tsuchiya.blue.coocan.jp/sympo2025.html)
 *  <u>Kangming Chen</u>, Ellen Hidemi Fukuda, Riemannian generalized conditional gradient methods, 2024 Annual Meeting of the Japan Society for Industrial and Applied Mathematics (JSIAM), Kyoto, Japan, 2024/09/15. [[Detail]](https://conference.wdc-jp.com/jsiam/2024/program/program_flash.html) 
