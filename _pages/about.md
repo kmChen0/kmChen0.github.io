@@ -21,7 +21,7 @@ I am actively seeking assistant professor or postdoctoral positions to further m
 
 
 
-<section id="publications" style="padding-top: 60px;">
+<section id="publications" style="padding-top: 60px;" markdown="1">
   <h2>Publications</h2>
   {% if author.googlescholar %}
     You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
@@ -50,7 +50,7 @@ I am actively seeking assistant professor or postdoctoral positions to further m
   
 </section>
 
-<section id="talks" style="padding-top: 60px;">
+<section id="talks" style="padding-top: 60px;" markdown="1">
   <h2>Talks and presentations</h2>
   <!-- {% if site.talkmap_link == true %}
     <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
