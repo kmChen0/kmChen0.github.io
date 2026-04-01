@@ -43,7 +43,22 @@ I am actively seeking assistant professor or postdoctoral positions to further m
   
 1. <u>K. Chen</u>, E. H. Fukuda and N. Yamashita. A proximal gradient method with Bregman distance in multi-objective optimization. *Pacific Journal of Optimization*. 2024, 20(4): 809-826.  [doi: 10.61208/pjo-2024-012.](https://doi.org/10.61208/pjo-2024-012)  [[Access]](http://yokohamapublishers.jp/online2/oppjo/vol20/p809.html)
 
-
+<!--
+<ol reversed style="line-height: 1.5;">
+    <li>
+      <u>K. Chen</u>, E. H. Fukuda. Riemannian conditional gradient methods... 2026. 
+      [doi: 10.1007/s40314-025-03496-1](https://doi.org/10.1007/s40314-025-03496-1)
+    </li>
+    <li>
+      <u>K. Chen</u>, E. H. Fukuda, and H. Sato. Nonlinear conjugate gradient method... 2025. 
+      [doi: 10.1016/j.amc.2024.129001.](https://www.sciencedirect.com/science/article/pii/S0096300324004624)
+    </li>
+    <li>
+      <u>K. Chen</u>, E. H. Fukuda and N. Yamashita. A proximal gradient method... 2024. 
+      [doi: 10.61208/pjo-2024-012.](https://doi.org/10.61208/pjo-2024-012)
+    </li>
+  </ol>
+--> 
 <h3>Preprint</h3>
 
 1. M. M. Alves, <u>K. Chen</u>, E. H. Fukuda. An inertial iteratively regularized extragradient method for bilevel variational inequality problems. *Submitted*, 2025. [[arXiv]](https://arxiv.org/abs/2507.16640)
