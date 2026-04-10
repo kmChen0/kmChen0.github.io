@@ -9,8 +9,10 @@ redirect_from:
 ---
 
 
+<!--
+I am Kangming Chen, an Assistant Professor at [Tokyo Metropolitan University](https://www.tmu.ac.jp/). --> 
 
-I am Kangming Chen, an Assistant Professor at [Tokyo Metropolitan University](https://www.tmu.ac.jp/). I originally come from China and obtained my doctoral degree from the [System Optimization Lab](http://www-optima.amp.i.kyoto-u.ac.jp/) at [Kyoto University](https://www.kyoto-u.ac.jp/), where I was supervised by Prof. [Ellen Hidemi Fukuda](http://www-optima.amp.i.kyoto-u.ac.jp/staff_website/ellen/).
+I am Kangming Chen, originally from China, and obtained my doctoral degree from the [System Optimization Lab](http://www-optima.amp.i.kyoto-u.ac.jp/) at [Kyoto University](https://www.kyoto-u.ac.jp/), where I was supervised by Prof. [Ellen Hidemi Fukuda](http://www-optima.amp.i.kyoto-u.ac.jp/staff_website/ellen/).
 
 Research Interests: Continuous Optimization, Multiobjective Optimization, Manifold Optimization, Bilevel Optimization.
 
