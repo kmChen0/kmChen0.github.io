@@ -17,7 +17,9 @@ layout: compress
     {% include masthead.html %}
 
     {{ content }}
-
+    
+    <a id="scrollTopBtn" title="Go to top"><i class="fas fa-chevron-up"></i></a>
+    
     <div class="page__footer">
       <footer>
         {% include footer/custom.html %}
@@ -27,5 +29,32 @@ layout: compress
 
     {% include scripts.html %}
 
+    <script>
+
+    var scrollTopButton = document.getElementById("scrollTopBtn");
+    
+
+    window.onscroll = function() {
+      scrollFunction();
+    };
+    
+    function scrollFunction() {
+
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopButton.style.display = "block";
+      } else {
+        scrollTopButton.style.display = "none";
+      }
+    }
+    
+
+    scrollTopButton.onclick = function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+      });
+    }
+  </script>
+    
   </body>
 </html>
