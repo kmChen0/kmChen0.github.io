@@ -9,12 +9,12 @@
 locale                   : "en-US"
 title                    : "Kangming Chen"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Kangming Chen"
 description              : &description "personal description"
 url                      : https://kmChen0.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "kmChen0/kmChen0.github.io"
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+# teaser                   : "500x300.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -73,21 +73,21 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : #　G-PVVMFSBZDD
 
 
 # Site Author
 author:
   name             : "Kangming Chen"
-  avatar           : "profile.png"
-  bio              : "PhD Student"
-  location         : "Kyoto"
+  avatar           : "cat.jpg"
+  bio              : "A lounging cat"
+  location         : "Tokyo, JAPAN"
   employer         :
   pubmed           : 
-  googlescholar    : 
-  email            : "kangming @ amp.i.kyoto-u.ac.jp"
+  googlescholar    : https://scholar.google.com/citations?user=czYKM04AAAAJ&hl=EN
+  email            : "ckmmath@outlook.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : kangming-chen-125630265
   orcid            : 
   pinterest        :
   soundcloud       :
@@ -115,7 +115,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-
+  tuchong          : https://tuchong.com/28077167/
 
 # Reading Files
 include:
@@ -175,33 +175,13 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
     output: true
     permalink: /:collection/:path/
 
 
 # Defaults
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
       path: ""
@@ -209,15 +189,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -227,23 +198,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 # Sass/SCSS
 sass:
@@ -261,14 +215,14 @@ timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database
 # Plugins
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
+#  - jekyll-sitemap
   - jekyll-gist
-  - jekyll-feed
+#  - jekyll-feed
   - jekyll-redirect-from
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
-  - jekyll-sitemap
+#  - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
