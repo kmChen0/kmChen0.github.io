@@ -5,5 +5,7 @@ main:
   - title: "Talks"
     url: "#talks"
 
-  - title: "CV"
-    url: /cv/
+
+  # - title: "CV"
+  #  url: /cv/
+
