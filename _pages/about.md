@@ -64,6 +64,7 @@ I am actively seeking assistant professor or postdoctoral positions to further m
 <h3>Preprint</h3>
 
 1. M. M. Alves, <u>K. Chen</u>, E. H. Fukuda. An inertial iteratively regularized extragradient method for bilevel variational inequality problems. *Submitted*, 2025. [[arXiv]](https://arxiv.org/abs/2507.16640)
+2. K. Chen. A proximal gradient framework for composite multiobjective optimization on Riemannian manifolds. Submitted, 2026.
 
   
 </section>
