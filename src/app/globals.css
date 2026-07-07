@@ -1,0 +1,125 @@
+:root {
+  /* Light Theme Colors */
+  --bg-color: #f8fafc;
+  --bg-secondary: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  
+  --accent-primary: #17B8D9; /* Zima Blue */
+  --accent-secondary: #0096C7; /* Deep Pool Blue */
+  --accent-gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  
+  --border-color: rgba(0, 0, 0, 0.08);
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+}
+
+[data-theme='dark'] {
+  /* Dark Theme Colors */
+  --bg-color: #0B0E14; /* Deep academic black */
+  --bg-secondary: #151A23; /* Slightly lighter for cards */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  
+  --accent-primary: #17B8D9; /* Zima Blue */
+  --accent-secondary: #48CAE4; /* Bright Cyan */
+  --accent-gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  
+  --border-color: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(21, 26, 35, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 14.5px;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  line-height: 1.2;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Typography Utilities */
+.text-gradient {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+/* Base Sections */
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: var(--accent-gradient);
+  border-radius: 2px;
+}

@@ -1,0 +1,97 @@
+.scholarLink {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.scholarLink a {
+  font-weight: 600;
+}
+
+.categoryTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  border-left: 4px solid var(--accent-primary);
+  padding-left: 1rem;
+}
+
+.pubList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pubCard {
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+}
+
+.pubCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary);
+}
+
+.pubHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.pubType {
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pubYear {
+  color: var(--text-muted);
+}
+
+.pubTitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.pubAuthors {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.pubVenue {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.pubLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.linkButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.linkButton:hover {
+  background: var(--border-color);
+  color: var(--accent-primary);
+}

@@ -1,0 +1,112 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  height: 100%;
+}
+
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.icon {
+  color: var(--accent-primary);
+  width: 28px;
+  height: 28px;
+}
+
+.cardHeader h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.listItem {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.listItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+}
+
+.listItem h4 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.listItem p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.yearBadge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--accent-secondary);
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skillGroup h4 {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.35rem 0.75rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
