@@ -6,6 +6,15 @@ import styles from "./Publications.module.css";
 
 const publications = [
   {
+    title: "Open-Loop Riemannian Frank--Wolfe: Fast Rates under Error Bounds and Scaling Inequalities",
+    authors: "K. Chen",
+    venue: "Submitted",
+    year: "2026",
+    accessLink: "https://arxiv.org/abs/2608.21598",
+    accessLabel: "arXiv:2608.21598",
+    type: "Preprint"
+  },
+  {
     title: "A proximal gradient framework for composite multiobjective optimization on Riemannian manifolds",
     authors: "K. Chen",
     venue: "Submitted",
