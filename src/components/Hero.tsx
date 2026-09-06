@@ -15,6 +15,7 @@ export function Hero() {
     "Multiobjective Optimization",
     "Manifold Optimization",
     "Bilevel Optimization",
+    "Optimization for Machine Learning",
   ];
 
   return (
