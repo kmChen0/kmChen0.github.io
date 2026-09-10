@@ -6,6 +6,13 @@ import styles from "./Talks.module.css";
 
 const talks = [
   {
+    title: "A Bregman inertial iteratively regularized extragradient method for bilevel variational inequality problems",
+    event: "The 2026 autumn national conference of Operations Research Society of Japan (ORSJ)",
+    location: "Kyoto, Japan",
+    date: "2026/09/11",
+    link: "https://orsj.org/2026f/"
+  },
+  {
     title: "An inertial iteratively regularized extragradient method for bilevel variational inequality problems",
     event: "The 2025 autumn national conference of Operations Research Society of Japan (ORSJ)",
     location: "Hiroshima, Japan",
