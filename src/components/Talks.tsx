@@ -88,7 +88,9 @@ export function Talks() {
   return (
     <section id="talks" className={`section ${styles.talksSection}`}>
       <div className="container">
-        <h2 className="section-title">Talks & Presentations</h2>
+        <h2 className="section-title">
+          Talks & Presentations <span className={styles.countBadge}>({talks.length})</span>
+        </h2>
         
         <div className={styles.timeline}>
           {talks.map((talk, index) => (
