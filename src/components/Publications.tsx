@@ -64,6 +64,8 @@ const publications = [
 ];
 
 export function Publications() {
+  const peerReviewed = publications.filter(p => p.type === "Peer-reviewed");
+  const preprints = publications.filter(p => p.type === "Preprint");
   return (
     <section id="publications" className="section">
       <div className="container">
@@ -73,7 +75,10 @@ export function Publications() {
           You can also find my articles on my <a href="https://scholar.google.com/citations?user=czYKM04AAAAJ&hl=EN" target="_blank" rel="noopener noreferrer" className="text-gradient">Google Scholar profile</a>.
         </p>
 
-        <h3 className={styles.categoryTitle}>Journal Publications</h3>
+        {/* 自动显示数量，例如：Journal Publications (3) */}
+        <h3 className={styles.categoryTitle}>
+          Journal Publications <span className={styles.countBadge}>({peerReviewed.length})</span>
+        </h3>
         <div className={styles.pubList}>
           {publications.filter(p => p.type === "Peer-reviewed").map((pub, index) => (
             <motion.div 
@@ -111,7 +116,10 @@ export function Publications() {
           ))}
         </div>
 
-        <h3 className={styles.categoryTitle} style={{ marginTop: "3rem" }}>Preprints / Working Papers</h3>
+        {/* 自动显示数量，例如：Preprints / Working Papers (2) */}
+        <h3 className={styles.categoryTitle}>
+          Preprints / Working Papers <span className={styles.countBadge}>({preprints.length})</span>
+        </h3>
         <div className={styles.pubList}>
           {publications.filter(p => p.type === "Preprint").map((pub, index) => (
             <motion.div 
