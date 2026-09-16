@@ -117,7 +117,7 @@ export function Publications() {
         </div>
 
         {/* 自动显示数量，例如：Preprints / Working Papers (2) */}
-        <h3 className={styles.categoryTitle}>
+        <h3 className={styles.categoryTitle} style={{ marginTop: "1rem" }}>
           Preprints / Working Papers <span className={styles.countBadge}>({preprints.length})</span>
         </h3>
         <div className={styles.pubList}>
