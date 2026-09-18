@@ -47,12 +47,12 @@ export function Hero() {
               </div>
               <div className={styles.infoItem}>
                 <Mail size={20} className={styles.icon} />
-                <a href="mailto:ckmmath@outlook.com">Send an email</a>
+                <a href="mailto:kangming@tmu.ac.jp">Send an email</a>
               </div>
             </div>
 
             <p className={styles.description}>
-              I am Kangming Chen, originally from China, and I am currently an Assistant Professor at <a href="https://www.tmu.ac.jp/english/" target="_blank" rel="noopener noreferrer" className="text-gradient">Tokyo Metropolitan University</a>. I obtained my doctoral degree from <a href="https://www.kyoto-u.ac.jp/" target="_blank" rel="noopener noreferrer" className="text-gradient">Kyoto University</a>, where I worked in the <a href="http://www-optima.amp.i.kyoto-u.ac.jp/" target="_blank" rel="noopener noreferrer" className="text-gradient">System Optimization Lab</a> under the supervision of Prof. <a href="http://www-optima.amp.i.kyoto-u.ac.jp/staff_website/ellen/" target="_blank" rel="noopener noreferrer" className="text-gradient">Ellen Hidemi Fukuda</a>.
+              I am Kangming Chen, and currently an Assistant Professor at <a href="https://www.tmu.ac.jp/" target="_blank" rel="noopener noreferrer" className="text-gradient">Tokyo Metropolitan University</a>. I obtained my doctoral degree from <a href="https://www.kyoto-u.ac.jp/" target="_blank" rel="noopener noreferrer" className="text-gradient">Kyoto University</a>, where I worked in the <a href="http://www-optima.amp.i.kyoto-u.ac.jp/" target="_blank" rel="noopener noreferrer" className="text-gradient">System Optimization Lab</a> under the supervision of Prof. <a href="http://www-optima.amp.i.kyoto-u.ac.jp/staff_website/ellen/" target="_blank" rel="noopener noreferrer" className="text-gradient">Ellen Hidemi Fukuda</a>.
               I am dedicated to advancing research in optimization, computational mathematics, and their applications in fields such as artificial intelligence, machine learning, and operations research.
             </p>
 
