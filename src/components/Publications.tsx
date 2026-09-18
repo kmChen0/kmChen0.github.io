@@ -72,7 +72,7 @@ export function Publications() {
         <h2 className="section-title">Publications</h2>
         
         <p className={styles.scholarLink}>
-          You can also find my articles on my <a href="https://scholar.google.com/citations?user=czYKM04AAAAJ&hl=EN" target="_blank" rel="noopener noreferrer" className="text-gradient">Google Scholar profile</a>.
+          A complete list of publications is available on my <a href="https://scholar.google.com/citations?user=czYKM04AAAAJ&hl=EN" target="_blank" rel="noopener noreferrer" className="text-gradient">Google Scholar profile</a>.
         </p>
 
         {/* 自动显示数量，例如：Journal Publications (3) */}
