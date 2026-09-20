@@ -20,11 +20,11 @@
 .pubList {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.3rem;
 }
 
 .pubCard {
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: var(--radius-lg);
   transition: var(--transition);
 }
@@ -68,7 +68,7 @@
 .pubVenue {
   font-style: italic;
   color: var(--text-muted);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   font-size: 0.9rem;
 }
 
@@ -81,7 +81,7 @@
 .linkButton {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   padding: 0.25rem 0.5rem;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
