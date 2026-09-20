@@ -24,7 +24,7 @@
 }
 
 .pubCard {
-  padding: 0.3rem;
+  padding: 0.4rem;
   border-radius: var(--radius-lg);
   transition: var(--transition);
 }
@@ -38,7 +38,7 @@
 .pubHeader {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
   font-size: 0.85rem;
   font-weight: 600;
 }
@@ -55,7 +55,7 @@
 
 .pubTitle {
   font-size: 1.1rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
   color: var(--text-primary);
 }
 
