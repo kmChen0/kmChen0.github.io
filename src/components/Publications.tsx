@@ -75,19 +75,27 @@ export function Publications() {
           A complete list of publications is available on my <a href="https://scholar.google.com/citations?user=czYKM04AAAAJ&hl=EN" target="_blank" rel="noopener noreferrer" className="text-gradient">Google Scholar profile</a>.
         </p>
 
+export function Publications() {
+  const peerReviewed = publications.filter(p => p.type === "Peer-reviewed");
+  const preprints = publications.filter(p => p.type === "Preprint");
+  return (
+    <section id="publications" className="section">
+      <div className="container">
+        <h2 className="section-title">Publications</h2>
+        
+        <p className={styles.scholarLink}>
+          A complete list of publications is available on my <a href="https://scholar.google.com/citations?user=czYKM04AAAAJ&hl=EN" target="_blank" rel="noopener noreferrer" className="text-gradient">Google Scholar profile</a>.
+        </p>
+
         {/* 自动显示数量，例如：Journal Publications (3) */}
         <h3 className={styles.categoryTitle}>
           Journal Publications <span className={styles.countBadge}>({peerReviewed.length})</span>
         </h3>
         <div className={styles.pubList}>
           {publications.filter(p => p.type === "Peer-reviewed").map((pub, index) => (
-            <motion.div 
+            <div 
               key={index} 
-              className={`glass ${styles.pubCard}`}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className={styles.pubCard}
             >
               <div className={styles.pubHeader}>
                 <span className={styles.pubType}>{pub.type}</span>
@@ -112,23 +120,19 @@ export function Publications() {
                   </a>
                 )}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* 自动显示数量，例如：Preprints / Working Papers (2) */}
-        <h3 className={styles.categoryTitle} style={{ marginTop: "1rem" }}>
+        <h3 className={styles.categoryTitle} style={{ marginTop: "3.5rem" }}>
           Preprints / Working Papers <span className={styles.countBadge}>({preprints.length})</span>
         </h3>
         <div className={styles.pubList}>
           {publications.filter(p => p.type === "Preprint").map((pub, index) => (
-            <motion.div 
+            <div 
               key={`preprint-${index}`} 
-              className={`glass ${styles.pubCard}`}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className={styles.pubCard}
             >
               <div className={styles.pubHeader}>
                 <span className={styles.pubType}>{pub.type}</span>
@@ -153,7 +157,7 @@ export function Publications() {
                   </a>
                 )}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
