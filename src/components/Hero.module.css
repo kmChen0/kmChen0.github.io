@@ -8,14 +8,14 @@
 .heroContent {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 4rem;
+  gap: 2rem;
   align-items: center;
 }
 
 .textContent {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .title {
@@ -33,14 +33,14 @@
 .infoList {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
   margin-top: 0.5rem;
 }
 
 .infoItem {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   color: var(--text-secondary);
   font-size: 1rem;
 }
@@ -54,11 +54,11 @@
   color: var(--text-secondary);
   max-width: 600px;
   line-height: 1.8;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .tagsContainer {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .tagsTitle {
@@ -66,13 +66,13 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--text-muted);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .tag {
