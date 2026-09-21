@@ -64,50 +64,94 @@ const publications = [
 ];
 
 export function Publications() {
-  const peerReviewed = publications.filter(p => p.type === "Peer-reviewed");
-  const preprints = publications.filter(p => p.type === "Preprint");
+  const peerReviewed = publications.filter(
+    p => p.type === "Peer-reviewed"
+  );
+
+  const preprints = publications.filter(
+    p => p.type === "Preprint"
+  );
+
   return (
     <section id="publications" className="section">
       <div className="container">
         <h2 className="section-title">Publications</h2>
-        
+
         <p className={styles.scholarLink}>
-          A complete list of publications is available on my <a href="https://scholar.google.com/citations?user=czYKM04AAAAJ&hl=EN" target="_blank" rel="noopener noreferrer" className="text-gradient">Google Scholar profile</a>.
+          A complete list of publications is available on my{" "}
+          <a
+            href="https://scholar.google.com/citations?user=czYKM04AAAAJ&hl=EN"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gradient"
+          >
+            Google Scholar profile
+          </a>.
         </p>
 
-        {/* 自动显示数量，例如：Journal Publications (3) */}
         <h3 className={styles.categoryTitle}>
-          Journal Publications <span className={styles.countBadge}>({peerReviewed.length})</span>
+          Journal Publications{" "}
+          <span className={styles.countBadge}>
+            ({peerReviewed.length})
+          </span>
         </h3>
+
         <div className={styles.pubList}>
-          {publications.filter(p => p.type === "Peer-reviewed").map((pub, index) => (
-            <motion.div 
-              key={index} 
-              className={`glass ${styles.pubCard}`}
-              initial={{ opacity: 0, y: 20 }}
+          {peerReviewed.map((pub, index) => (
+            <motion.div
+              key={index}
+              className={styles.pubCard}
+              initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{
+                duration: 0.4,
+                delay: index * 0.06,
+              }}
             >
               <div className={styles.pubHeader}>
-                <span className={styles.pubType}>{pub.type}</span>
-                <span className={styles.pubYear}>{pub.year}</span>
+                <span className={styles.pubType}>
+                  {pub.type}
+                </span>
+
+                <span className={styles.pubYear}>
+                  {pub.year}
+                </span>
               </div>
-              
-              <h3 className={styles.pubTitle}>{pub.title}</h3>
-              <p className={styles.pubAuthors}>{pub.authors}</p>
-              <p className={styles.pubVenue}>{pub.venue}</p>
-              
+
+              <h3 className={styles.pubTitle}>
+                {pub.title}
+              </h3>
+
+              <p className={styles.pubAuthors}>
+                {pub.authors}
+              </p>
+
+              <p className={styles.pubVenue}>
+                {pub.venue}
+              </p>
+
               <div className={styles.pubLinks}>
                 {pub.doiLink && (
-                  <a href={pub.doiLink} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
-                    <FileText size={16} />
+                  <a
+                    href={pub.doiLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.linkButton}
+                  >
+                    <FileText size={14} />
                     DOI: {pub.doi}
                   </a>
                 )}
+
                 {pub.accessLink && (
-                  <a href={pub.accessLink} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
-                    <ExternalLink size={16} />
+                  <a
+                    href={pub.accessLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.linkButton}
+                  >
+                    <ExternalLink size={14} />
                     {pub.accessLabel || "Access"}
                   </a>
                 )}
@@ -116,39 +160,69 @@ export function Publications() {
           ))}
         </div>
 
-        {/* 自动显示数量，例如：Preprints / Working Papers (2) */}
-        <h3 className={styles.categoryTitle} style={{ marginTop: "1rem" }}>
-          Preprints / Working Papers <span className={styles.countBadge}>({preprints.length})</span>
+        <h3 className={styles.categoryTitle}>
+          Preprints / Working Papers{" "}
+          <span className={styles.countBadge}>
+            ({preprints.length})
+          </span>
         </h3>
+
         <div className={styles.pubList}>
-          {publications.filter(p => p.type === "Preprint").map((pub, index) => (
-            <motion.div 
-              key={`preprint-${index}`} 
-              className={`glass ${styles.pubCard}`}
-              initial={{ opacity: 0, y: 20 }}
+          {preprints.map((pub, index) => (
+            <motion.div
+              key={`preprint-${index}`}
+              className={styles.pubCard}
+              initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{
+                duration: 0.4,
+                delay: index * 0.06,
+              }}
             >
               <div className={styles.pubHeader}>
-                <span className={styles.pubType}>{pub.type}</span>
-                <span className={styles.pubYear}>{pub.year}</span>
+                <span className={styles.pubType}>
+                  {pub.type}
+                </span>
+
+                <span className={styles.pubYear}>
+                  {pub.year}
+                </span>
               </div>
-              
-              <h3 className={styles.pubTitle}>{pub.title}</h3>
-              <p className={styles.pubAuthors}>{pub.authors}</p>
-              <p className={styles.pubVenue}>{pub.venue}</p>
-              
+
+              <h3 className={styles.pubTitle}>
+                {pub.title}
+              </h3>
+
+              <p className={styles.pubAuthors}>
+                {pub.authors}
+              </p>
+
+              <p className={styles.pubVenue}>
+                {pub.venue}
+              </p>
+
               <div className={styles.pubLinks}>
                 {pub.doiLink && (
-                  <a href={pub.doiLink} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
-                    <FileText size={16} />
+                  <a
+                    href={pub.doiLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.linkButton}
+                  >
+                    <FileText size={14} />
                     DOI: {pub.doi}
                   </a>
                 )}
+
                 {pub.accessLink && (
-                  <a href={pub.accessLink} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
-                    <ExternalLink size={16} />
+                  <a
+                    href={pub.accessLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.linkButton}
+                  >
+                    <ExternalLink size={14} />
                     {pub.accessLabel || "Access"}
                   </a>
                 )}
