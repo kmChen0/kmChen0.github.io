@@ -1,8 +1,8 @@
 .scholarLink {
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 1.4rem;
   color: var(--text-secondary);
   font-size: 1rem;
-  line-height: 1.6;
 }
 
 .scholarLink a {
@@ -15,18 +15,17 @@
 }
 
 
-/* Section title */
+/* Category title */
 
 .categoryTitle {
   font-size: 1.45rem;
-  line-height: 1.3;
-  margin-top: 2.5rem;
-  margin-bottom: 1.2rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
 
   color: var(--text-primary);
 
   border-left: 3px solid var(--accent-primary);
-  padding-left: 0.85rem;
+  padding-left: 0.75rem;
 }
 
 
@@ -35,26 +34,14 @@
 .pubList {
   display: flex;
   flex-direction: column;
+  gap: 0.65rem;
 }
 
 
 /* Individual publication */
 
 .pubCard {
-  padding: 1.1rem 0;
-  border-bottom: 1px solid var(--border-color);
-
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease;
-}
-
-.pubCard:first-child {
-  padding-top: 0;
-}
-
-.pubCard:hover {
-  border-color: var(--accent-primary);
+  padding: 0;
 }
 
 
@@ -62,41 +49,37 @@
 
 .pubHeader {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: baseline;
 
-  gap: 1rem;
+  margin-bottom: 0.15rem;
 
-  margin-bottom: 0.4rem;
-
-  font-size: 0.8rem;
-  line-height: 1.4;
+  font-size: 0.78rem;
   font-weight: 600;
+  line-height: 1.3;
 }
 
 .pubType {
   color: var(--accent-primary);
-
-  letter-spacing: 0.05em;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .pubYear {
-  flex-shrink: 0;
   color: var(--text-muted);
-  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
 }
 
 
 /* Paper title */
 
 .pubTitle {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.15rem;
 
   color: var(--text-primary);
 
-  font-size: 1.2rem;
-  line-height: 1.45;
+  font-size: 1.15rem;
+  line-height: 1.35;
   font-weight: 600;
 }
 
@@ -104,22 +87,13 @@
 /* Authors */
 
 .pubAuthors {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.1rem;
 
   color: var(--text-secondary);
 
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.4;
 }
-
-
-/*
-  Optional:
-  wrap your own name in a span with this class.
-
-  Example:
-  <span className={styles.me}>Kangming Chen</span>
-*/
 
 .me {
   color: var(--text-primary);
@@ -127,15 +101,15 @@
 }
 
 
-/* Journal / conference information */
+/* Venue */
 
 .pubVenue {
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.3rem;
 
   color: var(--text-muted);
 
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.88rem;
+  line-height: 1.4;
   font-style: italic;
 }
 
@@ -145,22 +119,19 @@
 .pubLinks {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-
-  gap: 0.45rem;
+  gap: 0.4rem;
 }
 
 
-/* PDF / DOI / arXiv / Code / BibTeX */
+/* Small lightweight links */
 
 .linkButton {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
 
-  gap: 0.35rem;
+  gap: 0.25rem;
 
-  padding: 0.28rem 0.55rem;
+  padding: 0.15rem 0.4rem;
 
   background: transparent;
 
@@ -169,46 +140,32 @@
 
   color: var(--text-secondary);
 
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   line-height: 1.2;
   font-weight: 500;
 
   text-decoration: none;
 
   transition:
-    color 0.18s ease,
-    border-color 0.18s ease,
-    background-color 0.18s ease;
+    color 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .linkButton:hover {
   color: var(--accent-primary);
   border-color: var(--accent-primary);
-  background: var(--bg-secondary);
 }
 
 
-/* Optional publication status:
-   Accepted / To appear / Preprint / Under review
-*/
+/* Optional publication status */
 
 .pubStatus {
-  display: inline-flex;
-  align-items: center;
-
-  margin-left: 0.5rem;
-  padding: 0.12rem 0.42rem;
-
-  border: 1px solid var(--border-color);
-  border-radius: 999px;
+  margin-left: 0.4rem;
 
   color: var(--text-muted);
 
-  font-size: 0.72rem;
-  line-height: 1.3;
+  font-size: 0.75rem;
   font-weight: 500;
-
-  vertical-align: middle;
 }
 
 
@@ -217,23 +174,20 @@
 @media (max-width: 640px) {
   .categoryTitle {
     font-size: 1.3rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-
-    padding-left: 0.7rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.7rem;
   }
 
-  .pubCard {
-    padding: 1rem 0;
+  .pubList {
+    gap: 0.75rem;
   }
 
   .pubHeader {
-    font-size: 0.76rem;
+    font-size: 0.74rem;
   }
 
   .pubTitle {
-    font-size: 1.08rem;
-    line-height: 1.45;
+    font-size: 1.05rem;
   }
 
   .pubAuthors {
@@ -241,11 +195,10 @@
   }
 
   .pubVenue {
-    font-size: 0.86rem;
+    font-size: 0.84rem;
   }
 
   .linkButton {
-    padding: 0.3rem 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.76rem;
   }
 }
