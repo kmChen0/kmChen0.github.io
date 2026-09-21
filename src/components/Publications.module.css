@@ -1,97 +1,251 @@
 .scholarLink {
-  text-align: center;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
   color: var(--text-secondary);
-  font-size: 1.1rem;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .scholarLink a {
   font-weight: 600;
+  color: var(--accent-primary);
 }
 
-.categoryTitle {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--text-primary);
-  border-left: 4px solid var(--accent-primary);
-  padding-left: 1rem;
+.scholarLink a:hover {
+  text-decoration: underline;
 }
+
+
+/* Section title */
+
+.categoryTitle {
+  font-size: 1.45rem;
+  line-height: 1.3;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+
+  color: var(--text-primary);
+
+  border-left: 3px solid var(--accent-primary);
+  padding-left: 0.85rem;
+}
+
+
+/* Publication list */
 
 .pubList {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
 }
 
+
+/* Individual publication */
+
 .pubCard {
-  padding: 0.3rem;
-  border-radius: var(--radius-lg);
-  transition: var(--transition);
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--border-color);
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.pubCard:first-child {
+  padding-top: 0;
 }
 
 .pubCard:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
   border-color: var(--accent-primary);
 }
 
+
+/* Type / year */
+
 .pubHeader {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.3rem;
-  font-size: 0.85rem;
+
+  gap: 1rem;
+
+  margin-bottom: 0.4rem;
+
+  font-size: 0.8rem;
+  line-height: 1.4;
   font-weight: 600;
 }
 
 .pubType {
   color: var(--accent-primary);
+
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .pubYear {
+  flex-shrink: 0;
   color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
 }
+
+
+/* Paper title */
 
 .pubTitle {
-  font-size: 1.25rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
+
   color: var(--text-primary);
+
+  font-size: 1.2rem;
+  line-height: 1.45;
+  font-weight: 600;
 }
+
+
+/* Authors */
 
 .pubAuthors {
+  margin-bottom: 0.25rem;
+
   color: var(--text-secondary);
-  margin-bottom: 0.3rem;
-  font-size: 1rem;
+
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-.pubVenue {
-  font-style: italic;
-  color: var(--text-muted);
-  margin-bottom: 0.3rem;
-  font-size: 0.9rem;
+
+/*
+  Optional:
+  wrap your own name in a span with this class.
+
+  Example:
+  <span className={styles.me}>Kangming Chen</span>
+*/
+
+.me {
+  color: var(--text-primary);
+  font-weight: 600;
 }
+
+
+/* Journal / conference information */
+
+.pubVenue {
+  margin-bottom: 0.65rem;
+
+  color: var(--text-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+
+/* Links */
 
 .pubLinks {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  align-items: center;
+
+  gap: 0.45rem;
 }
+
+
+/* PDF / DOI / arXiv / Code / BibTeX */
 
 .linkButton {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.25rem 0.5rem;
-  background: var(--bg-secondary);
+  justify-content: center;
+
+  gap: 0.35rem;
+
+  padding: 0.28rem 0.55rem;
+
+  background: transparent;
+
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  font-size: 0.85rem;
+
+  color: var(--text-secondary);
+
+  font-size: 0.82rem;
+  line-height: 1.2;
   font-weight: 500;
-  color: var(--text-primary);
+
+  text-decoration: none;
+
+  transition:
+    color 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease;
 }
 
 .linkButton:hover {
-  background: var(--border-color);
   color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  background: var(--bg-secondary);
+}
+
+
+/* Optional publication status:
+   Accepted / To appear / Preprint / Under review
+*/
+
+.pubStatus {
+  display: inline-flex;
+  align-items: center;
+
+  margin-left: 0.5rem;
+  padding: 0.12rem 0.42rem;
+
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+
+  color: var(--text-muted);
+
+  font-size: 0.72rem;
+  line-height: 1.3;
+  font-weight: 500;
+
+  vertical-align: middle;
+}
+
+
+/* Mobile */
+
+@media (max-width: 640px) {
+  .categoryTitle {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    padding-left: 0.7rem;
+  }
+
+  .pubCard {
+    padding: 1rem 0;
+  }
+
+  .pubHeader {
+    font-size: 0.76rem;
+  }
+
+  .pubTitle {
+    font-size: 1.08rem;
+    line-height: 1.45;
+  }
+
+  .pubAuthors {
+    font-size: 0.9rem;
+  }
+
+  .pubVenue {
+    font-size: 0.86rem;
+  }
+
+  .linkButton {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
 }
