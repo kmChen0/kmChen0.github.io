@@ -181,13 +181,13 @@
 
   .listItem p {
     font-size: 0.88rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.2rem;
   }
 
   .yearBadge {
     display: block;
 
-    margin-top: 0.1rem;
+    margin-top: 0.2rem;
 
     font-size: 0.78rem;
   }
