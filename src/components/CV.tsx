@@ -110,7 +110,7 @@ export function CV() {
             </div>
           </motion.div>
 
-          {/* Skills */}
+          /* {/* Skills */}
           <motion.div 
             className={`glass ${styles.card}`}
             initial={{ opacity: 0, y: 20 }}
@@ -134,7 +134,7 @@ export function CV() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */
         </div>
       </div>
     </section>
