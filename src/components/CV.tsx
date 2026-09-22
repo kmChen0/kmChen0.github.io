@@ -35,14 +35,17 @@ export function CV() {
   // ];
 
   return (
-    <section id="cv" className="section">
+    <section
+      id="cv"
+      className={`section ${styles.backgroundSection}`}
+    >
       <div className="container">
         <h2 className="section-title">Background</h2>
-
+    
         <div className={styles.grid}>
           {/* Education */}
-          <motion.div 
-            className={`glass ${styles.card}`}
+          <motion.div
+            className={styles.card}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
@@ -51,22 +54,23 @@ export function CV() {
               <GraduationCap className={styles.icon} />
               <h3>Education</h3>
             </div>
+    
             <div className={styles.list}>
               {education.map((item, i) => (
                 <div key={i} className={styles.listItem}>
                   <h4>{item.degree}</h4>
                   <p>{item.institution}</p>
-                  <span className={styles.yearBadge}>{item.year}</span>
+                  <span className={styles.yearBadge}>
+                    {item.year}
+                  </span>
                 </div>
               ))}
             </div>
           </motion.div>
-
-
-
+    
           {/* Grants */}
-          <motion.div 
-            className={`glass ${styles.card}`}
+          <motion.div
+            className={styles.card}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
@@ -76,20 +80,23 @@ export function CV() {
               <Award className={styles.icon} />
               <h3>Grants</h3>
             </div>
+    
             <div className={styles.list}>
               {grants.map((item, i) => (
                 <div key={i} className={styles.listItem}>
                   <h4>{item.title}</h4>
                   <p>{item.org}</p>
-                  <span className={styles.yearBadge}>{item.duration}</span>
+                  <span className={styles.yearBadge}>
+                    {item.duration}
+                  </span>
                 </div>
               ))}
             </div>
           </motion.div>
-
+    
           {/* Service */}
-          <motion.div 
-            className={`glass ${styles.card}`}
+          <motion.div
+            className={styles.card}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
@@ -99,42 +106,19 @@ export function CV() {
               <Users className={styles.icon} />
               <h3>Service</h3>
             </div>
+    
             <div className={styles.list}>
               {services.map((item, i) => (
                 <div key={i} className={styles.listItem}>
                   <h4>{item.role}</h4>
                   <p>{item.org}</p>
-                  <span className={styles.yearBadge}>{item.duration}</span>
+                  <span className={styles.yearBadge}>
+                    {item.duration}
+                  </span>
                 </div>
               ))}
             </div>
           </motion.div>
-
-          /* {/* Skills */}
-          <motion.div 
-            className={`glass ${styles.card}`}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ delay: 0.4 }}
-          >
-            <div className={styles.cardHeader}>
-              <Wrench className={styles.icon} />
-              <h3>Skills</h3>
-            </div>
-            <div className={styles.skillsList}>
-              {skills.map((skillGroup, i) => (
-                <div key={i} className={styles.skillGroup}>
-                  <h4>{skillGroup.category}</h4>
-                  <div className={styles.tags}>
-                    {skillGroup.items.map((item, j) => (
-                      <span key={j} className={styles.tag}>{item}</span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </motion.div> */
         </div>
       </div>
     </section>
