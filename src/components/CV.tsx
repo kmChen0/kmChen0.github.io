@@ -29,10 +29,10 @@ export function CV() {
     { role: "Member", org: "Japan Society for Industrial and Applied Mathematics (JSIAM)", duration: "2024 – present" },
   ];
 
-  const skills = [
-    { category: "Languages", items: ["Japanese", "English", "Chinese"] },
-    { category: "Programming", items: ["Python", "Matlab"] },
-  ];
+  // const skills = [
+  //   { category: "Languages", items: ["Japanese", "English", "Chinese"] },
+  //   { category: "Programming", items: ["Python", "Matlab"] },
+  // ];
 
   return (
     <section id="cv" className="section">
