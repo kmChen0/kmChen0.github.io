@@ -8,7 +8,7 @@ const publications = [
   {
     title: "A Bregman inertial iteratively regularized extragradient method for bilevel variational inequality problems",
     authors: "K. Chen, A. Hori and E. H. Fukuda",
-    venue: "Preprint",
+    venue: "Submitted",
     year: "2026",
     accessLink: "http://arxiv.org/abs/2609.30898",
     accessLabel: "arXiv:2609.30898",
