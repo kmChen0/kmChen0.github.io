@@ -6,6 +6,15 @@ import styles from "./Publications.module.css";
 
 const publications = [
   {
+    title: "A Bregman inertial iteratively regularized extragradient method for bilevel variational inequality problems",
+    authors: "K. Chen, A. Hori and E. H. Fukuda",
+    venue: "Preprint",
+    year: "2026",
+    accessLink: "http://arxiv.org/abs/2609.30898",
+    accessLabel: "arXiv:2609.30898",
+    type: "Preprint"
+  },
+  {
     title: "Open-Loop Riemannian Frank--Wolfe: Fast Rates under Error Bounds and Scaling Inequalities",
     authors: "K. Chen",
     venue: "Submitted",
