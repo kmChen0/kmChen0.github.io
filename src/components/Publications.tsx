@@ -6,6 +6,15 @@ import styles from "./Publications.module.css";
 
 const publications = [
   {
+    title: "Dual-Inertial Bregman Methods with Energy-Based Safeguarding",
+    authors: "K. Chen",
+    venue: "arXiv",
+    year: "2026",
+    accessLink: "https://arxiv.org/abs/2610.20420",
+    accessLabel: "arXiv:2610.20420",
+    type: "Preprint"
+  },
+  {
     title: "A Bregman inertial iteratively regularized extragradient method for bilevel variational inequality problems",
     authors: "K. Chen, A. Hori and E. H. Fukuda",
     venue: "Submitted",
