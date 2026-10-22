@@ -8,7 +8,7 @@ const publications = [
   {
     title: "Dual-Inertial Bregman Methods with Energy-Based Safeguarding",
     authors: "K. Chen",
-    venue: "arXiv",
+    venue: "Submitted",
     year: "2026",
     accessLink: "https://arxiv.org/abs/2610.20420",
     accessLabel: "arXiv:2610.20420",
