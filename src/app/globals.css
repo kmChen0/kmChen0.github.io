@@ -1,6 +1,6 @@
 :root {
   --page-max-width: 1000px;
-  --font-heading: Georgia, "Times New Roman", serif;
+  --font-heading: var(--font-inter), system-ui, -apple-system, sans-serif;
   /* Light Theme Colors */
   --bg-color: #f8fafc;
   --bg-secondary: #ffffff;
