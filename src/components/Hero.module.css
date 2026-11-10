@@ -19,9 +19,17 @@
 }
 
 .title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4vw, 3rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+.title :global(.text-gradient) {
+  background: none;
+  color: var(--accent-secondary);
+  -webkit-text-fill-color: currentColor;
 }
 
 .subtitle {
