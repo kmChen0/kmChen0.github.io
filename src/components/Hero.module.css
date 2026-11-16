@@ -199,14 +199,13 @@
   font-size: 4rem;
   font-weight: 800;
   color: var(--accent-primary);
-  box-shadow: var(--shadow-lg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-sm);
   z-index: 2;
   position: relative;
 }
 
 .decorativeCircle1, .decorativeCircle2 {
+  display: none;
   position: absolute;
   border-radius: 0;
   z-index: 0;

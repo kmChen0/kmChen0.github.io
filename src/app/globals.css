@@ -8,17 +8,16 @@
   --leading-body: 1.65;
   --leading-heading: 1.4;
   /* Light Theme Colors */
-  --bg-color: #f8fafc;
+  --bg-color: #f7f8fa;
   --bg-secondary: #ffffff;
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
+  --text-primary: #29323d;
+  --text-secondary: #505d6b;
+  --text-muted: #657281;
   
-  --accent-primary: #17B8D9; /* Zima Blue */
-  --accent-secondary: #0096C7; /* Deep Pool Blue */
-  --accent-gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  --accent-primary: #526d8a;
+  --accent-secondary: #435e7a;
   
-  --border-color: rgba(0, 0, 0, 0.08);
+  --border-color: rgba(41, 50, 61, 0.12);
   --glass-bg: rgba(255, 255, 255, 0.7);
   --glass-border: rgba(255, 255, 255, 0.4);
   
@@ -34,18 +33,17 @@
 
 [data-theme='dark'] {
   /* Dark Theme Colors */
-  --bg-color: #0B0E14; /* Deep academic black */
-  --bg-secondary: #151A23; /* Slightly lighter for cards */
-  --text-primary: #f8fafc;
-  --text-secondary: #cbd5e1;
-  --text-muted: #94a3b8;
+  --bg-color: #171c23;
+  --bg-secondary: #202731;
+  --text-primary: #e7ecf2;
+  --text-secondary: #bac5d1;
+  --text-muted: #96a5b6;
   
-  --accent-primary: #17B8D9; /* Zima Blue */
-  --accent-secondary: #48CAE4; /* Bright Cyan */
-  --accent-gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  --accent-primary: #9bb3ce;
+  --accent-secondary: #b0c5dc;
   
   --border-color: rgba(255, 255, 255, 0.08);
-  --glass-bg: rgba(21, 26, 35, 0.6);
+  --glass-bg: rgba(32, 39, 49, 0.85);
   --glass-border: rgba(255, 255, 255, 0.05);
   
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
@@ -96,10 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Typography Utilities */
 .text-gradient {
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent-primary);
 }
 
 /* Glassmorphism Utilities */
@@ -134,6 +129,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: var(--accent-gradient);
+  background: var(--accent-primary);
   border-radius: 2px;
 }
