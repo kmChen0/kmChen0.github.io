@@ -1,12 +1,18 @@
 :root {
   --page-max-width: 1000px;
   --font-heading: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-entry: 1.0625rem;
+  --text-subheading: 1.125rem;
+  --leading-body: 1.65;
+  --leading-heading: 1.4;
   /* Light Theme Colors */
   --bg-color: #f8fafc;
   --bg-secondary: #ffffff;
   --text-primary: #0f172a;
   --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  --text-muted: #64748b;
   
   --accent-primary: #17B8D9; /* Zima Blue */
   --accent-secondary: #0096C7; /* Deep Pool Blue */
@@ -31,8 +37,8 @@
   --bg-color: #0B0E14; /* Deep academic black */
   --bg-secondary: #151A23; /* Slightly lighter for cards */
   --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
   
   --accent-primary: #17B8D9; /* Zima Blue */
   --accent-secondary: #48CAE4; /* Bright Cyan */
@@ -55,14 +61,16 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 14.5px;
+  font-size: 100%;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-primary);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
-  line-height: 1.2;
+  font-size: var(--text-body);
+  font-weight: 400;
+  line-height: var(--leading-body);
   transition: background-color 0.3s ease, color 0.3s ease;
   overflow-x: hidden;
 }
@@ -75,8 +83,8 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
-  font-weight: 700;
-  line-height: 1.2;
+  font-weight: 600;
+  line-height: var(--leading-heading);
 }
 
 .container {
@@ -110,9 +118,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-title {
   font-family: var(--font-heading);
-  font-size: clamp(2rem, 4vw, 2.4rem);
-  font-weight: 400;
-  line-height: 1.25;
+  font-size: clamp(1.75rem, 3vw, 1.875rem);
+  font-weight: 500;
+  line-height: 1.3;
   margin-bottom: 2rem;
   text-align: center;
   position: relative;

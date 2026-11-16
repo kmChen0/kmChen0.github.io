@@ -57,8 +57,8 @@
   align-items: center;
   gap: 0.35rem;
   color: var(--accent-primary);
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: var(--text-small);
+  font-weight: 400;
   margin-bottom: 0.2rem;
 }
 
@@ -68,10 +68,10 @@
 }
 
 .talkTitle {
-  font-size: 1.08rem;
+  font-size: var(--text-entry);
   margin-bottom: 0.2rem;
   color: var(--text-primary);
-  line-height: 1.4;
+  line-height: var(--leading-heading);
   font-weight: 600;
 }
 
@@ -87,8 +87,8 @@
   align-items: flex-start;
   gap: 0.3rem;
   color: var(--text-secondary);
-  font-size: 0.92rem;
-  line-height: 1.4;
+  font-size: var(--text-small);
+  line-height: var(--leading-body);
 }
 
 .icon {
@@ -101,7 +101,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  font-size: 0.85rem;
+  font-size: var(--text-small);
   font-weight: 500;
   color: var(--accent-primary);
   text-decoration: none;
@@ -129,15 +129,10 @@
     margin-bottom: 1.2rem;
   }
 
-  .talkTitle {
-    font-size: 1rem;
-  }
+}
 
-  .detailItem {
-    font-size: 0.88rem;
-  }
-
-  .talkLink {
-    font-size: 0.82rem;
-  }
+.countBadge {
+  font-size: var(--text-small);
+  font-weight: 400;
+  color: var(--text-muted);
 }

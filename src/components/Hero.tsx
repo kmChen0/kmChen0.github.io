@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, GraduationCap, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import Image from "next/image";
 import styles from "./Hero.module.css";
 import { PeekABooCat } from "./PeekABooCat";
@@ -45,11 +45,15 @@ export function Hero() {
                 <MapPin size={20} className={styles.icon} />
                 <span>Tokyo, Japan</span>
               </div>
-              <div className={styles.infoItem}>
-                <Mail size={20} className={styles.icon} />
-                <a href="mailto:kangming@tmu.ac.jp">Send an email</a>
-              </div>
             </div>
+
+            <nav className={styles.profileLinks} aria-label="Contact and profiles">
+              <a href="mailto:kangming@tmu.ac.jp">Contact</a>
+              <a href="https://scholar.google.com/citations?user=czYKM04AAAAJ&hl=EN" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+              <a href="https://researchmap.jp/kmchen" target="_blank" rel="noopener noreferrer">researchmap</a>
+              <a href="https://www.linkedin.com/in/kangming-chen-125630265" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://tuchong.com/28077167/" target="_blank" rel="noopener noreferrer" title="My Photography Portfolio">Photography</a>
+            </nav>
 
             <p className={styles.description}>
               I am Kangming Chen, and currently an Assistant Professor at <a href="https://www.tmu.ac.jp/" target="_blank" rel="noopener noreferrer" className="text-gradient">Tokyo Metropolitan University</a>. I obtained my doctoral degree from <a href="https://www.kyoto-u.ac.jp/" target="_blank" rel="noopener noreferrer" className="text-gradient">Kyoto University</a>, where I worked in the <a href="http://www-optima.amp.i.kyoto-u.ac.jp/" target="_blank" rel="noopener noreferrer" className="text-gradient">System Optimization Lab</a> under the supervision of Prof. <a href="http://www-optima.amp.i.kyoto-u.ac.jp/staff_website/ellen/" target="_blank" rel="noopener noreferrer" className="text-gradient">Ellen Hidemi Fukuda</a>.
