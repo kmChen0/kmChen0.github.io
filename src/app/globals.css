@@ -14,8 +14,8 @@
   --text-secondary: #505d6b;
   --text-muted: #657281;
   
-  --accent-primary: #526d8a;
-  --accent-secondary: #435e7a;
+  --accent-primary: #0077b6;
+  --accent-secondary: #006494;
   
   --border-color: rgba(41, 50, 61, 0.12);
   --glass-bg: rgba(255, 255, 255, 0.7);
@@ -39,8 +39,8 @@
   --text-secondary: #bac5d1;
   --text-muted: #96a5b6;
   
-  --accent-primary: #9bb3ce;
-  --accent-secondary: #b0c5dc;
+  --accent-primary: #66c2f0;
+  --accent-secondary: #9bd8f7;
   
   --border-color: rgba(255, 255, 255, 0.08);
   --glass-bg: rgba(32, 39, 49, 0.85);
@@ -94,7 +94,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Typography Utilities */
 .text-gradient {
+  color: var(--accent-secondary);
+}
+
+a.text-gradient:hover,
+a.text-gradient:focus-visible {
   color: var(--accent-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 /* Glassmorphism Utilities */

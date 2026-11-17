@@ -28,7 +28,7 @@
 
 .title :global(.text-gradient) {
   background: none;
-  color: var(--accent-secondary);
+  color: var(--accent-primary);
   -webkit-text-fill-color: currentColor;
 }
 
@@ -87,11 +87,11 @@
 
 .profileLinks a:hover,
 .profileLinks a:focus-visible {
-  color: var(--accent-secondary);
+  color: var(--accent-primary);
 }
 
 .profileLinks a:focus-visible {
-  outline: 2px solid var(--accent-secondary);
+  outline: 2px solid var(--accent-primary);
   outline-offset: 2px;
 }
 
