@@ -58,8 +58,8 @@ export function CV() {
             <div className={styles.list}>
               {education.map((item, i) => (
                 <div key={i} className={styles.listItem}>
-                  <h4>{item.degree}</h4>
-                  <p>{item.institution}</p>
+                  <h4>{item.institution}</h4>
+                  <p>{item.degree}</p>
                   <span className={styles.yearBadge}>
                     {item.year}
                   </span>
@@ -110,8 +110,8 @@ export function CV() {
             <div className={styles.list}>
               {services.map((item, i) => (
                 <div key={i} className={styles.listItem}>
-                  <h4>{item.role}</h4>
-                  <p>{item.org}</p>
+                  <h4>{item.org}</h4>
+                  <p>{item.role}</p>
                   <span className={styles.yearBadge}>
                     {item.duration}
                   </span>

@@ -160,7 +160,7 @@
 }
 
 .tag {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.75rem;
   background: var(--glass-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
