@@ -36,7 +36,7 @@ export function Hero() {
               onMouseLeave={() => setIsNameHovered(false)}
             >
               <PeekABooCat isHovered={isNameHovered} />
-              <h1 className={styles.title} style={{ position: "relative", zIndex: 1, backgroundColor: "var(--bg-primary)" }}>
+              <h1 className={styles.title} style={{ position: "relative", zIndex: 1, backgroundColor: "var(--bg-color)" }}>
                 Hi, I'm <span className="text-gradient">Kangming Chen</span>
               </h1>
             </div>

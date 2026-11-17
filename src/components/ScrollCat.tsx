@@ -1,124 +1,112 @@
 "use client";
 
-import { motion, useScroll, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { motion, useScroll, AnimatePresence, useReducedMotion } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "./ScrollCat.module.css";
 
+type CatState = "sleeping" | "sitting" | "stretching";
+
 export function ScrollCat() {
   const { scrollYProgress } = useScroll();
-  const [scrollState, setScrollState] = useState<"sleeping" | "sitting" | "stretching">("sleeping");
-  const [temporaryState, setTemporaryState] = useState<"sitting" | "stretching" | null>(null);
-  const [isHovered, setIsHovered] = useState(false);
-
+  const reduceMotion = useReducedMotion();
+  const [scrollState, setScrollState] = useState<CatState>("sleeping");
+  const [temporaryState, setTemporaryState] = useState<CatState | null>(null);
   const [meows, setMeows] = useState<number[]>([]);
-
-  const handleCatClick = () => {
-    const id = Date.now();
-    setMeows((prev) => [...prev, id]);
-    
-    // Wake up if sleeping
-    if (scrollState === "sleeping" && !temporaryState) {
-      const wakeUpStates: ("sitting" | "stretching")[] = ["sitting", "stretching"];
-      const randomState = wakeUpStates[Math.floor(Math.random() * wakeUpStates.length)];
-      setTemporaryState(randomState);
-      setTimeout(() => {
-        setTemporaryState(null);
-      }, 2000);
-    }
-    
-    setTimeout(() => {
-      setMeows((prev) => prev.filter((m) => m !== id));
-    }, 1000);
-  };
+  const nextMeowId = useRef(0);
+  const timers = useRef(new Set<ReturnType<typeof setTimeout>>());
+  const wakeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    return scrollYProgress.onChange((latest) => {
-      if (latest < 0.3) {
-        setScrollState("sleeping");
-      } else if (latest < 0.7) {
-        setScrollState("sitting");
-      } else {
-        setScrollState("stretching");
-      }
-    });
+    const pending = timers.current;
+    return () => { pending.forEach(clearTimeout); pending.clear(); };
+  }, []);
+
+  useEffect(() => {
+    let settleTimer: ReturnType<typeof setTimeout>;
+    const update = (progress: number) => {
+      clearTimeout(settleTimer);
+      // Debounce scrolling, with hysteresis to avoid flickering at boundaries.
+      settleTimer = setTimeout(() => {
+        setScrollState(previous => {
+          if (previous === "sleeping") return progress >= 0.72 ? "stretching" : progress >= 0.32 ? "sitting" : "sleeping";
+          if (previous === "stretching") return progress < 0.28 ? "sleeping" : progress < 0.68 ? "sitting" : "stretching";
+          return progress < 0.28 ? "sleeping" : progress >= 0.72 ? "stretching" : "sitting";
+        });
+      }, 150);
+    };
+    update(scrollYProgress.get());
+    const unsubscribe = scrollYProgress.on("change", update);
+    return () => { unsubscribe(); clearTimeout(settleTimer); };
   }, [scrollYProgress]);
+
+  const schedule = (callback: () => void, delay: number) => {
+    const timer = setTimeout(() => {
+      timers.current.delete(timer);
+      callback();
+    }, delay);
+    timers.current.add(timer);
+    return timer;
+  };
+
+  const handleCatClick = () => {
+    const id = nextMeowId.current++;
+    setMeows(previous => [...previous, id]);
+    schedule(() => setMeows(previous => previous.filter(meow => meow !== id)), 1000);
+    if (scrollState === "sleeping" && wakeTimer.current === null) {
+      setTemporaryState(Math.random() < 0.5 ? "sitting" : "stretching");
+      wakeTimer.current = schedule(() => {
+        setTemporaryState(null);
+        wakeTimer.current = null;
+      }, 2000);
+    }
+  };
 
   const displayState = temporaryState || scrollState;
 
   return (
     <div className={styles.container}>
-      <motion.div
-        className={styles.catSvg}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+      <motion.button
+        type="button"
+        aria-label="Pet the cat"
+        className={styles.catButton}
         onClick={handleCatClick}
-        whileTap={{ scale: 0.8, rotate: -5 }}
-        animate={{
-          scale: isHovered ? 1.1 : 1,
-          y: isHovered ? -5 : 0
-        }}
-        transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100px", height: "100px" }}
+        whileHover={reduceMotion ? undefined : { y: -2 }}
+        whileTap={reduceMotion ? undefined : { scale: 0.96 }}
+        transition={{ type: "tween", duration: reduceMotion ? 0 : 0.2 }}
       >
-        <AnimatePresence mode="wait">
-          <motion.div
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.span
             key={displayState}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.2 }}
-            style={{ width: "100%", height: "100%", position: "relative" }}
+            className={styles.catImage}
+            initial={{ opacity: reduceMotion ? 1 : 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: reduceMotion ? 1 : 0 }}
+            transition={{ duration: reduceMotion ? 0 : 0.25 }}
           >
-            <Image 
-              src={`/images/cats/${displayState}.png`}
-              alt={`Cute black cat ${displayState}`}
-              fill
-              style={{ objectFit: "contain" }}
-              sizes="100px"
-              priority
-            />
-          </motion.div>
+            <Image src={`/images/cats/${displayState}.png`} alt="" fill
+              style={{ objectFit: "contain" }} sizes="(max-width: 768px) 60px, 80px" />
+          </motion.span>
         </AnimatePresence>
-        
-        {/* Zzz... indicator when sleeping */}
         {displayState === "sleeping" && (
-          <motion.div
-            initial={{ opacity: 0, y: 0 }}
-            animate={{ opacity: [0, 1, 0], y: [0, -20] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            style={{
-              position: "absolute",
-              top: "0px",
-              right: "0px",
-              fontSize: "14px",
-              fontFamily: "monospace",
-              pointerEvents: "none",
-              color: "var(--text-primary)"
-            }}
-          >
-            Zzz
-          </motion.div>
+          <motion.span
+            aria-hidden="true"
+            className={styles.sleepLabel}
+            initial={false}
+            animate={reduceMotion ? { opacity: 0.7, y: 0 } : { opacity: [0, 0.7, 0], y: [0, -12] }}
+            transition={reduceMotion ? { duration: 0 } : { duration: 3, repeat: Infinity }}
+          >Zzz</motion.span>
         )}
-      </motion.div>
-      {meows.map((id) => (
-        <motion.div
+      </motion.button>
+      {meows.map(id => (
+        <motion.span
           key={id}
-          initial={{ opacity: 1, y: 0, scale: 0.5 }}
-          animate={{ opacity: 0, y: -50, scale: 1.2 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          style={{
-            position: "absolute",
-            top: -20,
-            fontSize: "1.2rem",
-            fontWeight: "bold",
-            color: "var(--accent-primary)",
-            pointerEvents: "none",
-            whiteSpace: "nowrap"
-          }}
-        >
-          Miao!
-        </motion.div>
+          aria-hidden="true"
+          className={styles.meow}
+          initial={{ opacity: 1, y: 0, scale: reduceMotion ? 1 : 0.8 }}
+          animate={reduceMotion ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: -50, scale: 1.1 }}
+          transition={{ duration: reduceMotion ? 0 : 1, ease: "easeOut" }}
+        >Miao!</motion.span>
       ))}
     </div>
   );
