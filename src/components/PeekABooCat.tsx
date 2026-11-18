@@ -22,7 +22,7 @@ export function PeekABooCat({ isHovered }: PeekABooCatProps) {
     }}>
       <motion.div
         initial={false}
-        animate={{ y: !reduceMotion && isHovered ? 45 : 20 }}
+        animate={{ y: !reduceMotion && isHovered ? 45 : 0 }}
         transition={{ type: "tween", duration: reduceMotion ? 0 : 0.45, delay: isHovered ? 0 : 0.25, ease: "easeInOut" }}
         style={{
           width: "100%",
@@ -35,7 +35,7 @@ export function PeekABooCat({ isHovered }: PeekABooCatProps) {
       >
         <div style={{ width: "50px", height: "50px", position: "relative" }}>
           <Image 
-            src="/images/cats/sitting.png"
+            src="/images/cats/handdrawn/peeking.png"
             alt=""
             fill
             sizes="50px"

@@ -84,8 +84,16 @@ export function ScrollCat() {
             exit={{ opacity: reduceMotion ? 1 : 0 }}
             transition={{ duration: reduceMotion ? 0 : 0.25 }}
           >
-            <Image src={`/images/cats/${displayState}.png`} alt="" fill
-              style={{ objectFit: "contain" }} sizes="(max-width: 768px) 60px, 80px" />
+            <span className={`${styles.catArt} ${displayState === "sleeping" ? styles.breathing : ""}`}>
+              <Image src={`/images/cats/handdrawn/${displayState}.png`} alt="" fill
+                className={displayState === "sitting" ? styles.openEyes : undefined}
+                style={{ objectFit: "contain" }} sizes="(max-width: 768px) 60px, 80px" />
+              {displayState === "sitting" && (
+                <Image src="/images/cats/handdrawn/sitting-blink.png" alt="" fill
+                  className={styles.closedEyes}
+                  style={{ objectFit: "contain" }} sizes="(max-width: 768px) 60px, 80px" />
+              )}
+            </span>
           </motion.span>
         </AnimatePresence>
         {displayState === "sleeping" && (
